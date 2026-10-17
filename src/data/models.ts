@@ -116,4 +116,58 @@ export const models: LlmModel[] = [
     summary:
       'Meta’s open-weight flagship (816B total, 42B active, 1M-token context). Runs on two Mac Studio-class machines at inference providers — consumer GPUs need not apply. Included here as the honest upper bound of the chart.',
   },
+  {
+    slug: 'llama-3-2-1b',
+    name: 'Llama 3.2 1B',
+    org: 'Meta',
+    paramsB: 1.2,
+    released: '2024-09',
+    summary:
+      'Meta’s smallest open model. Runs on nearly anything — integrated graphics, 4 GB RAM laptops, even phones. The “if this can’t run it, nothing can” baseline of the chart.',
+  },
+  {
+    slug: 'llama-3-2-3b',
+    name: 'Llama 3.2 3B',
+    org: 'Meta',
+    paramsB: 3.2,
+    released: '2024-09',
+    summary:
+      'The sweet spot for 8 GB RAM laptops without a discrete GPU. Surprisingly capable for its size and comfortable in well under 4 GB at Q4.',
+  },
+  {
+    slug: 'gemma-2-2b',
+    name: 'Gemma 2 2B',
+    org: 'Google',
+    paramsB: 2.6,
+    released: '2024-07',
+    summary:
+      'Google’s compact Gemma 2. Punches above its weight on writing quality and is a favorite for CPU-only and low-VRAM setups.',
+  },
+  {
+    slug: 'qwen2-5-3b',
+    name: 'Qwen2.5 3B',
+    org: 'Alibaba',
+    paramsB: 3.1,
+    released: '2024-09',
+    summary:
+      'Alibaba’s small tier with the same coding/multilingual strengths as its bigger siblings. A strong pick for 4–6 GB GPUs.',
+  },
+  {
+    slug: 'phi-3-5-mini',
+    name: 'Phi-3.5 mini',
+    org: 'Microsoft',
+    paramsB: 3.8,
+    released: '2024-08',
+    summary:
+      'Microsoft’s 3.8B reasoning-focused model. One of the best quality-per-GB options for 4 GB cards and CPU-only machines.',
+  },
+  {
+    slug: 'mistral-nemo-12b',
+    name: 'Mistral Nemo 12B',
+    org: 'Mistral AI',
+    paramsB: 12.2,
+    released: '2024-07',
+    summary:
+      'A 12B built with NVIDIA, aimed at consumer rigs. Fits comfortably on 12 GB cards at Q4 and is a common step-up from 7B models.',
+  },
 ];
